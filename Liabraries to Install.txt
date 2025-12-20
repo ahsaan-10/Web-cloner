@@ -1,0 +1,10 @@
+Ctrl + ~
+
+
+pip install streamlit playwright beautifulsoup4
+
+playwright install
+
+C:\Users\Maaz Akhter\AppData\Roaming\Python\Python313\Scripts
+
+adding environment variable system path
