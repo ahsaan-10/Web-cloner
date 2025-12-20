@@ -29,12 +29,15 @@ env.bak/
 venv.bak/
 
 # IDE
-.vscode/
+# .vscode/ - Keep VS Code settings for project setup
 .idea/
 *.swp
 *.swo
 *~
 .DS_Store
+
+# Environment
+.env
 
 # Streamlit
 .streamlit/secrets.toml
