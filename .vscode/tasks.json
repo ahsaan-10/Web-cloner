@@ -1,0 +1,74 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Streamlit App",
+      "type": "shell",
+      "command": "${workspaceFolder}/venv/bin/streamlit",
+      "args": [
+        "run",
+        "${workspaceFolder}/src/app.py"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Install Dependencies",
+      "type": "shell",
+      "command": "${workspaceFolder}/venv/bin/pip",
+      "args": [
+        "install",
+        "-r",
+        "${workspaceFolder}/requirements.txt"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Activate Virtual Environment",
+      "type": "shell",
+      "command": "source ${workspaceFolder}/venv/bin/activate",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Check Python Version",
+      "type": "shell",
+      "command": "${workspaceFolder}/venv/bin/python",
+      "args": [
+        "--version"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "List Installed Packages",
+      "type": "shell",
+      "command": "${workspaceFolder}/venv/bin/pip",
+      "args": [
+        "list"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}
